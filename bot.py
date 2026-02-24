@@ -81,4 +81,4 @@ app.add_handler(CommandHandler("addcertificado", lambda u,c: add_role(u,c,"certi
 app.add_handler(CommandHandler("addcofundador", lambda u,c: add_role(u,c,"cofundadores")))
 app.add_handler(CommandHandler("reload", reload_cmd))
 
-app.run_polling()
+app.run_polling(close_loop=False)
