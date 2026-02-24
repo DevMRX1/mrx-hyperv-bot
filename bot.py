@@ -75,7 +75,7 @@ async def reload_cmd(update, context):
 
 app = ApplicationBuilder().token(TOKEN).build()
 
-app.add_handler(CommandHandler("staff", staff))
+app.add_handlerCommandHandler("mrxstaff", staff))
 app.add_handler(CommandHandler("addadmin", lambda u,c: add_role(u,c,"admins")))
 app.add_handler(CommandHandler("addcertificado", lambda u,c: add_role(u,c,"certificados")))
 app.add_handler(CommandHandler("addcofundador", lambda u,c: add_role(u,c,"cofundadores")))
